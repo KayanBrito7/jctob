@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JCTOB</title>
+    <title>Cadastrar Evento</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <h2>SEVIF</h2>
+            </div>
+        </div>
+        <div class="content">
+            <h1>Cadastrar Evento</h1>
+            <form action="#" method="POST">
+                <label for="nome">Nome do Evento:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="categoria">Categoria do Evento:</label>
+                <input type="text" id="categoria" name="categoria" required>
+
+                <label for="nomeEnvolvidos">Nomes dos Envolvidos:</label>
+                <input type="text" id="nomeEnvolvidos" name="nomeEnvolvidos" required>
+
+                <label for="emailEnvolvidos">E-mails dos Envolvidos:</label>
+                <input type="email" id="emailEnvolvidos" name="emailEnvolvidos" required>
+
+                <label for="fotoEnvolvidos">Foto dos Envolvidos:</label>
+                <input type="file" id="fotoEnvolvidos" name="fotoEnvolvidos" accept="image/*" required>
+
+                <label for="dataInscricao">Data de Inscrição:</label>
+                <input type="date" id="dataInscricao" name="dataInscricao" required>
+
+                <label for="dataEvento">Data do Evento:</label>
+                <input type="date" id="dataEvento" name="dataEvento" required>
+
+                <label for="localizacao">Localização do Evento:</label>
+                <input type="text" id="localizacao" name="localizacao" required>
+
+                <label for="tag">Tag:</label>
+                <input type="text" id="tag" name="tag" required>
+
+                <label for="descricao">Descrição do Evento:</label>
+                <textarea id="descricao" name="descricao" rows="4" required></textarea>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </div>
 </body>
+
 </html>
